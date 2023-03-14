@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>DefaultValuesLwcController</members>
+        <members>DefaultValuesLwcControllerTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Default_Value_Field_Mapping__mdt.Parent_Object_Field__c</members>
+        <members>Default_Value_Field_Mapping__mdt.Parent_Object_Name__c</members>
+        <members>Default_Value_Field_Mapping__mdt.Source_Component_Type__c</members>
+        <members>Default_Value_Field_Mapping__mdt.Source_Key__c</members>
+        <members>Default_Value_Field_Mapping__mdt.Target_Object_Field__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Default_Value_Field_Mapping.Acct_to_Opp_AccountId_Mapping</members>
+        <members>Default_Value_Field_Mapping.Acct_to_Opp_AccountId_Mapping_Flow</members>
+        <members>Default_Value_Field_Mapping.Acct_to_Opp_Test_Field_Mapping</members>
+        <members>Default_Value_Field_Mapping.Acct_to_Opp_Test_Field_Mapping_Flow</members>
+        <name>CustomMetadata</name>
+    </types>
+    <types>
+        <members>Default_Value_Field_Mapping__mdt</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Opp_creation_flow</members>
+        <name>FlowDefinition</name>
+    </types>
+    <types>
+        <members>navToNewRecCreateModalWithDefaults</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <version>55.0</version>
+</Package>

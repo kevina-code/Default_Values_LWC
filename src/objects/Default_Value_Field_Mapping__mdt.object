@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Set default values for custom record creation modals.</description>
+    <fields>
+        <fullName>Parent_Object_Field__c</fullName>
+        <description>Parent object field to source default value from.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Parent object field to source default value from.</inlineHelpText>
+        <label>Parent Object Field</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parent_Object_Name__c</fullName>
+        <description>Name of Parent object to get default value from.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Name of Parent object to get default value from.</inlineHelpText>
+        <label>Parent Object Name</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Source_Component_Type__c</fullName>
+        <description>Source component type, such as Quick Action or Flow.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Source component type, such as Quick Action or Flow.</inlineHelpText>
+        <label>Source Component Type</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Flow</fullName>
+                    <default>true</default>
+                    <label>Flow</label>
+                </value>
+                <value>
+                    <fullName>Quick Action</fullName>
+                    <default>false</default>
+                    <label>Quick Action</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Source_Key__c</fullName>
+        <description>Referenced by the navToNewRecCreateModalWithDefaults LWC to pull in default value mappings, this will either be the API name of a Quick Action, or a Flow variable value.
+For the Quick Action use case, here&apos;s an example of what it could look like:
+Account_XXXXX_New_Opp
+For the Flow use case, use a flow variable value as the key to match to the proper default value mapping records.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Referenced by the navToNewRecCreateModalWithDefaults LWC to pull in default value mappings, this will either be the API name of a Quick Action, or a Flow variable value.
+For the Quick Action use case, here&apos;s an example of what it could look like:
+Account_XXXXX_New_Opp
+For the Flow use case, use a flow variable value as the key to match to the proper default value mapping records.</inlineHelpText>
+        <label>Source Key</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Target_Object_Field__c</fullName>
+        <description>Target object field to populate from parent object field.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Target object field to populate from parent object field.</inlineHelpText>
+        <label>Target Object Field</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Default Value Field Mapping</label>
+    <pluralLabel>Default Value Field Mappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>
